@@ -7,8 +7,7 @@ RUN apt-get -qq -y install php libapache2-mod-php php-mcrypt php-mysql
 
 RUN apt-get -qq install apache2 -y
 
-#RUN wget https://github.com/Frecuencio/sqlbuddy-php7/archive/master.zip        #https://github.com/calvinlough/sqlbuddy/raw/gh-pages/sqlbuddy.zip
-#RUN unzip sqlbuddy.zip -d /var/www/html/sqlbuddy
+# install and run sqlbuddy [this version works with php7]
 RUN mkdir /var/www/html/sqlbuddy
 ADD sqlbuddy /var/www/html/sqlbuddy
 
